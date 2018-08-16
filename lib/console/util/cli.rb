@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'thor'
+require 'tty-progressbar'
 
 module Console
   module Util
@@ -17,6 +18,21 @@ module Console
         require_relative 'version'
         puts "v#{Console::Util::VERSION}"
       end
+
+      desc 'hw', 'Hello World!'
+      def hw
+        puts "Hello World!"
+      end
+
+      desc 'progress', 'Progress!'
+      def progress
+        bar = TTY::ProgressBar.new("downloading [:bar]", total: 30)
+        30.times do
+          sleep(0.1)
+          bar.advance(1)
+        end
+      end
+
       map %w(--version -v) => :version
     end
   end

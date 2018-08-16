@@ -38,6 +38,14 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 
 Everyone interacting in the Console::Util project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/console-util/blob/master/CODE_OF_CONDUCT.md).
 
+
+## Thanks
+![SurgeForward Logo](https://surgeforward.com//wp-content/themes/understrap-master/images/logo.png)
+
+Thanks to [Surge](https://www.surgeforward.com/) for their generous support of this and many other open source projects benefiting our community!
+
+
 ## Copyright
 
 Copyright (c) 2018 Vincil Bishop. See [MIT License](LICENSE.txt) for further details.
+
