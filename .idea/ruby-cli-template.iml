@@ -9,8 +9,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.5.0, rbenv: 2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec (v3.5.0, rbenv: 2.2.3) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="tty-cursor (v0.6.0, rbenv: 2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tty-screen (v0.6.5, rbenv: 2.2.3) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tty-spinner (v0.8.0, rbenv: 2.2.3) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="unicode-display_width (v1.4.0, rbenv: 2.2.3) [gem]" level="application" />
   </component>
 </module>
