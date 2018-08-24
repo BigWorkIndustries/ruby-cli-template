@@ -2,6 +2,7 @@
 
 require 'thor'
 require 'tty-progressbar'
+require 'tty-spinner'
 
 module Console
   module Util
@@ -31,6 +32,20 @@ module Console
           sleep(0.1)
           bar.advance(1)
         end
+      end
+
+      desc 'spinner', 'Spinner!'
+      def spinner
+        TTY::Spinner::FORMATS.each_pair { |key, value|
+
+          spinner = TTY::Spinner.new("[:spinner] #{key.to_s} ...", format: key)
+
+          spinner.auto_spin # Automatic animation with default interval
+
+          sleep(2) # Perform task
+
+          spinner.stop('Done!') # Stop animation
+        }
       end
 
       map %w(--version -v) => :version
