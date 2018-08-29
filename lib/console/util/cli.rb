@@ -3,6 +3,8 @@
 require 'thor'
 require 'tty-progressbar'
 require 'tty-spinner'
+require 'tty-table'
+require 'tty-font'
 
 module Console
   module Util
@@ -46,6 +48,20 @@ module Console
 
           spinner.stop('Done!') # Stop animation
         }
+      end
+
+      desc 'table', 'Table!'
+      def table
+        table = TTY::Table.new header: ['h1', 'h2'], rows: [['a1', 'a2'], ['b1', 'b2']]
+
+        table.render(:ascii)
+      end
+
+      desc 'font', 'Font!'
+      def font
+        font = TTY::Font.new(:standard)
+
+        puts font.write('Hello World!')
       end
 
       map %w(--version -v) => :version
